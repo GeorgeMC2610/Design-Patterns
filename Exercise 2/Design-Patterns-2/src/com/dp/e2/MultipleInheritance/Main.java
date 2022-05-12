@@ -3,6 +3,7 @@ import com.dp.e2.MultipleInheritance.Classes.*;
 
 public class Main
 {
+
     public static void main(String... args)
     {
         // === ΓΕΩΡΓΙΟΣ ΣΕΪΜΕΝΗΣ - Π19204 ===
