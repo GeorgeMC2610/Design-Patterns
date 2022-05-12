@@ -1,4 +1,4 @@
-package com.company.modem;
+package com.dp.e1.modem;
 
 public interface DataChannel
 {
