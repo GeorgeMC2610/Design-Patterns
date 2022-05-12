@@ -15,6 +15,7 @@ public class PasswordProtector
     {
         this.safeNumber = safeNumber;
         this.passwordClient = passwordClient;
+        this.passwordClient.setPasswordProtector(this);
     }
 
     public void Check(int code)
