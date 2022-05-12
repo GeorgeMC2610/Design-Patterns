@@ -39,6 +39,5 @@ public class ProtectedDoor extends PasswordClient implements Door
         passcode = scanner.nextInt();
 
         passwordProtector.Check(passcode);
-
     }
 }
