@@ -1,6 +1,13 @@
 package com.dp.e2.Delegation.Classes;
 
-public interface PasswordClient
+public abstract class PasswordClient
 {
-    public void alarm();
+    private PasswordProtector passwordProtector;
+    public void setPasswordProtector(PasswordProtector passwordProtector)
+    {
+        this.passwordProtector = passwordProtector;
+    }
+
+    public abstract void alarm();
+
 }

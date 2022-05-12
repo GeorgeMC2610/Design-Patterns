@@ -1,14 +1,7 @@
 package com.dp.e2.Delegation.Classes;
 
-public class Door
+public interface Door
 {
-    public void lock()
-    {
-
-    }
-
-    public void unlock()
-    {
-
-    }
+    public void lock();
+    public void unlock();
 }
