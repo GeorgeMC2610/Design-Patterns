@@ -9,6 +9,7 @@ public class Main
         // === ΓΕΩΡΓΙΟΣ ΣΕΪΜΕΝΗΣ - Π19204 ===
         // 2η Εργασία στα Πρότυπα Ανάπτυξης Λογισμικού
         // Υλοποίηση ISP μέσω Πολλαπλής Κληρονομικότητας.
+        System.out.println("=== MULTIPLE INHERITANCE ===\n\n");
 
         PasswordProtector protector = new PasswordProtector();
         ProtectedDoor door = new ProtectedDoor(protector);

@@ -10,6 +10,7 @@ public class Main
         // === ΓΕΩΡΓΙΟΣ ΣΕΪΜΕΝΗΣ - Π19204 ===
         // 2η Εργασία στα Πρότυπα Ανάπτυξης Λογισμικού
         // Υλοποίηση ISP μέσω Αποστολής Μηνυμάτων.
+        System.out.println("=== DELEGATION ===\n\n");
 
         PasswordProtector p1 = new PasswordProtector();
         ProtectedDoor protectedDoor = new ProtectedDoor();
