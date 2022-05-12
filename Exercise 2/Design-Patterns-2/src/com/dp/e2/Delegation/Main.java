@@ -4,8 +4,12 @@ import com.dp.e2.Delegation.Classes.*;
 
 public class Main {
 
-    public static void main(String[] args)
+    public static void main(String... args)
     {
+        // === ΓΕΩΡΓΙΟΣ ΣΕΪΜΕΝΗΣ - Π19204 ===
+        // 2η Εργασία στα Πρότυπα Ανάπτυξης Λογισμικού
+        // Υλοποίηση ISP μέσω Αποστολής Μηνυμάτων.
+
         PasswordProtector p1 = new PasswordProtector();
         ProtectedDoor protectedDoor = new ProtectedDoor();
 
