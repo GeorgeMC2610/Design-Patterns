@@ -17,7 +17,7 @@ class Car(IMovable, ILockable):
         self.x += x
         self.y += y
 
-        print(f"Successfully moved Car in position {x}, {y}.")
+        print(f"Successfully moved Car in position {self.x}, {self.y}.")
 
     def lock(self):
         self.locked = True

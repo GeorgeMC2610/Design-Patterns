@@ -19,7 +19,7 @@ class Truck(IMovable, ILockable, ITrailerHooker):
         self.x += x
         self.y += y
 
-        print(f"Successfully moved Truck in position {x}, {y}.")
+        print(f"Successfully moved Truck in position {self.x}, {self.y}.")
 
     def lock(self):
         self.locked = True

@@ -19,7 +19,7 @@ class Aeroplane(IMovable, ILockable, IFlying):
         self.x += x
         self.y += y
 
-        print(f"Successfully moved Aeroplane in position {x}, {y}.")
+        print(f"Successfully moved Aeroplane in position {self.x}, {self.y}.")
 
     def fly(self, x, y, z):
 
@@ -31,7 +31,7 @@ class Aeroplane(IMovable, ILockable, IFlying):
         self.y += y
         self.z += z
 
-        print(f"Successfully flew Aeroplane in position {x}, {y}, {z}.")
+        print(f"Successfully flew Aeroplane in position {self.x}, {self.y}, {self.z}.")
 
     def lock(self):
         self.locked = True
