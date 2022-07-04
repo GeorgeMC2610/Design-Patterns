@@ -9,8 +9,20 @@ class Car(IMovable, ILockable):
         self.y = 0
 
     def move(self, x, y):
+        
+        if self.locked:
+            print("Car is locked it cannot move!")
+            return
+
         self.x += x
         self.y += y
 
+        print(f"Successfully moved Car in position {x}, {y}.")
+
     def lock(self):
         self.locked = True
+        print("Locked the Car.")
+
+    def unlock(self):
+        self.locked = False
+        print("Unlocked the Car.")

@@ -11,16 +11,32 @@ class Aeroplane(IMovable, ILockable, IFlying):
         self.z = 0
 
     def move(self, x, y):
+
+        if self.locked:
+            print("Aeroplane is locked it cannot move!")
+            return
+
         self.x += x
         self.y += y
 
+        print(f"Successfully moved Aeroplane in position {x}, {y}.")
+
     def fly(self, x, y, z):
+
+        if self.locked:
+            print("Aeroplane is locked it cannot move!")
+            return
+
         self.x += x
         self.y += y
         self.z += z
 
+        print(f"Successfully flew Aeroplane in position {x}, {y}, {z}.")
+
     def lock(self):
         self.locked = True
+        print("Locked the Aeroplane.")
 
     def unlock(self):
         self.locked = False
+        print("Unlocked the Aeroplane.")
