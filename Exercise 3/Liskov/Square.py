@@ -17,7 +17,6 @@ class Square(Shape):
         self.width = length
         self.height = length
 
-
     def area(self):
 
         return self.width * self.height
