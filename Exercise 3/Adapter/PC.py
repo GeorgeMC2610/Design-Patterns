@@ -1,8 +1,8 @@
-from VGAtoHDMIadapter import VGAtoHDMIadapter
+from HDMItoVGAadapter import HDMItoVGAadapter
 
 class PC:
 
-    def __init__(self, adapter : VGAtoHDMIadapter):
+    def __init__(self, adapter : HDMItoVGAadapter):
         self.adapter = adapter
         
 
