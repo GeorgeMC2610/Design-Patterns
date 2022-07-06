@@ -1,7 +1,7 @@
 from VGAinterface import VGAinterface
 from HDMIcable import HDMIcable
 
-class VGAtoHDMIadapter(VGAinterface):
+class HDMItoVGAadapter(VGAinterface):
 
     def __init__(self, cable : HDMIcable):
         self.cable = cable
