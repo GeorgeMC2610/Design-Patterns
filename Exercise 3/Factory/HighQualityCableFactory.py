@@ -1,13 +1,13 @@
 from CableFactory import CableFactory
 from GraphicsCable import GraphicsCable
 from USBcable import USBcable
-from VGAcable import VGAcable
-from USB2Cable import USB2Cable
+from DisplayPort import DisplayPort
+from USBtypeC import USBtypeC
 
-class LowQualityCable(CableFactory):
+class HighQualityCable(CableFactory):
 
     def get_graphics_cable(self) -> GraphicsCable:
-        return VGAcable()
+        return DisplayPort()
 
     def get_usb_cable(self) -> USBcable:
-        return USB2Cable()
+        return USBtypeC()
