@@ -2,5 +2,5 @@ from GraphicsCable import GraphicsCable
 
 class VGAcable(GraphicsCable):
 
-    def show(self):
+    def show_graphics(self):
         print("VGA is slow.")
