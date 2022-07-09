@@ -4,7 +4,7 @@ from USBcable import USBcable
 from VGAcable import VGAcable
 from USB2Cable import USB2Cable
 
-class LowQualityCable(CableFactory):
+class LowQualityCableFactory(CableFactory):
 
     def get_graphics_cable(self) -> GraphicsCable:
         return VGAcable()

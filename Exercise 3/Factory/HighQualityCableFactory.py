@@ -4,7 +4,7 @@ from USBcable import USBcable
 from DisplayPort import DisplayPort
 from USBtypeC import USBtypeC
 
-class HighQualityCable(CableFactory):
+class HighQualityCableFactory(CableFactory):
 
     def get_graphics_cable(self) -> GraphicsCable:
         return DisplayPort()
