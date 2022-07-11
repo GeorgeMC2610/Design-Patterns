@@ -19,7 +19,9 @@ print("Type '3' to login.")
 print("Type '0' to exit.\n")
 
 actions = {
-    '1' : retry_pattern.retry_news_page
+    '1' : retry_pattern.retry_news_page,
+    '2' : retry_pattern.retry_register,
+    '3' : retry_pattern.retry_login
 }
 
 while True:
@@ -30,5 +32,10 @@ while True:
 
     while user_input not in actions:
         user_input = input("Wrong action. Try again --> ")
-    
-    print(actions[user_input]())
+
+    if user_input == '2' or user_input == '3':
+        input_username = input("Enter Username --> ")
+        input_password = input("Enter Password --> ")
+        print(actions[user_input](input_username, input_password))
+    else:
+        print(actions[user_input]())
