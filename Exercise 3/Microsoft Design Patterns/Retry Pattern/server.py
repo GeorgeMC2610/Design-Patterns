@@ -9,12 +9,16 @@ class Server:
         
         i = random.randint(1, 10)
 
-        if i > 4:
+        if i > 1:
             return "NEWS PAGE. [showing news...]"
         
         raise Exception("Error 500")
 
     def register(self, username : str, password : str):
+
+        i = random.randint(0, 100)
+        if i == 100:
+            raise Exception("Error 500")
 
         if username not in self.registeredAccounts.keys():
             self.registeredAccounts.update( { username : password} )
