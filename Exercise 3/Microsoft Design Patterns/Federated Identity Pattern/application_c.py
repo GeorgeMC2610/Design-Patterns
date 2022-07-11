@@ -18,3 +18,7 @@ class ApplicationC:
         
         self.registered_accounts.update( {username : password} )
         return f"Welcome! Nice to have you, {username}."
+
+    def useful_function(self):
+
+        print("Hi from Application C!")
