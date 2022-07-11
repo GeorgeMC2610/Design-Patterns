@@ -53,4 +53,3 @@ while True:
         
         other_available_actions[other_action](input_username, input_password)
         sys.exit()
-
