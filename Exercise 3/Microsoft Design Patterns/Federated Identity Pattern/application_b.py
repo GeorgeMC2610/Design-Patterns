@@ -12,9 +12,9 @@ class ApplicationB:
         ApplicationB.Tokens.append(token)
         return token
     
-    def useful_function_a(self, token):
+    def useful_function_b(self, token):
 
         if token not in ApplicationB.Tokens:
             return "This action cannot be done!"
         
-        return "Useful function from A."
+        return "Useful function from B."
