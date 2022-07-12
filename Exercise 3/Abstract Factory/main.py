@@ -5,12 +5,13 @@
 # USB type-C and Display Port are the fastest available.
 # but we offer several qualities from several factories.
 
+from CableFactory import CableFactory
 from LowQualityCableFactory import LowQualityCableFactory
 from MediumQualityCableFactory import MediumQualityCableFactory
 from HighQualityCableFactory import HighQualityCableFactory
 
 
-def read_quality():
+def read_quality() -> CableFactory:
 
     qualities = {
         'low':    LowQualityCableFactory(),
@@ -25,6 +26,7 @@ def read_quality():
     
     print("That was wrong. Try again.")
     return read_quality()
+
 
 
 factory = read_quality()

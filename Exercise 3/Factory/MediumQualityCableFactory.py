@@ -1,13 +1,10 @@
-from CableFactory import CableFactory
-from GraphicsCable import GraphicsCable
-from USBcable import USBcable
 from HDMIcable import HDMIcable
 from USB3Cable import USB3Cable
 
-class MediumQualityCableFactory(CableFactory):
+class MediumQualityCableFactory():
 
-    def get_graphics_cable(self) -> GraphicsCable:
+    def get_graphics_cable(self) -> HDMIcable:
         return HDMIcable()
 
-    def get_usb_cable(self) -> USBcable:
+    def get_usb_cable(self) -> USB3Cable:
         return USB3Cable()

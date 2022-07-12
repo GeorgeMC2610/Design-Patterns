@@ -1,6 +1,4 @@
-from GraphicsCable import GraphicsCable
-
-class HDMIcable(GraphicsCable):
+class HDMIcable():
 
     def show_graphics(self):
         print("HDMI is good.")
