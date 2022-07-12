@@ -1,24 +1,20 @@
+import random
+
 class ApplicationB:
 
     def __init__(self):
         self.registered_accounts = {}
 
-    def login(self, username, password):
-        if username not in self.registered_accounts.keys():
-            return "Wrong credentials."
-        
-        if self.registered_accounts[username] != password:
-            return "Wrong credentials."
-        
-        return f"Welcome back, {username}!"
+    def generate_token(self) -> str:
     
-    def register(self, username, password):
-        if username in self.registered_accounts.keys():
-            return "Username already exists."
+        symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        token = ''.join([symbols[random.randint(0, len(symbols)-1)] for i in range(20)])
+        ApplicationB.Tokens.append(token)
+        return token
+    
+    def useful_function_a(self, token):
+
+        if token not in ApplicationB.Tokens:
+            return "This action cannot be done!"
         
-        self.registered_accounts.update( {username : password} )
-        return f"Welcome! Nice to have you, {username}."
-
-    def useful_function(self):
-
-        print("Hi from Application B!")
+        return "Useful function from A."

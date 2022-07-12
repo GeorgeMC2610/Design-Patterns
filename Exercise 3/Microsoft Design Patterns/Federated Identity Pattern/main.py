@@ -41,9 +41,9 @@ while True:
     while True:
 
         other_available_actions = {
-            'a' : auth1.useful_function_a,
-            'b' : auth1.useful_function_b,
-            'c' : auth1.useful_function_c
+            'a' : auth1.connect_to_application_a,
+            'b' : auth1.connect_to_application_b,
+            'c' : auth1.connect_to_application_c
         }
 
         other_action = input(f"{input_username}, please select an application (a, b or c) --> ")
@@ -51,5 +51,5 @@ while True:
         while other_action not in other_available_actions:
             other_action = input("Wrong application, please enter one from the available ones --> ")
         
-        other_available_actions[other_action](input_username, input_password)
+        other_available_actions[other_action]()
         sys.exit()
